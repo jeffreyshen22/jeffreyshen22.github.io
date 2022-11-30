@@ -1,0 +1,70 @@
+#logo {
+    height: 44px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #F6E5D0;
+}
+
+li, a {
+    font-family: "Garamond", serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #0D5601;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.body_content {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 40px;
+}
+
+#snake, #monstera, #philodendron {
+    height: 500px;
+}
+
+#snake:hover, #monstera:hover, #philodendron:hover {
+    height: 510px;
+    animation: bounce 1s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%
+    20%
+    60%
+    100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+}
